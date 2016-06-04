@@ -5,9 +5,14 @@ import scala.scalajs.js
 @js.native
 object Waves extends js.Object {
 
+  def init(): Unit = js.native
   def init(config: WavesConfig): Unit = js.native
+
   def attach(elements: List[String], classes: List[String] = null): Unit = js.native
-  def ripple(elements: List[String], options: RippleOptions = null): Unit = js.native
+
+  def ripple(elements: List[String]): Unit = js.native
+  def ripple(elements: List[String], options: RippleOptions): Unit = js.native
+
   def calm(elements: List[String]): Unit = js.native
 
 }
